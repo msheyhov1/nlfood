@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +12,16 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: url('/background.jpg') no-repeat right center / cover;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-attachment: fixed;
     }
   </style>
 </head>
-<body class="min-h-screen bg-[#fcebd3] text-[#063c2d]">
-  <header class="flex justify-between items-center px-10 py-6">
+<body class="min-h-screen text-[#063c2d] bg-[#fcebd3]/90">
+  <header class="flex justify-between items-center px-10 py-6 bg-white/70 backdrop-blur-sm">
     <h1 class="text-2xl font-extrabold">NL FOOD</h1>
     <nav class="space-x-6 text-sm font-medium">
       <a href="#about" class="hover:underline">About Us</a>
@@ -27,7 +32,7 @@
   </header>
 
   <main class="px-10 pt-10 pb-20 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
-    <div class="space-y-6">
+    <div class="space-y-6 bg-white/70 p-6 rounded-xl shadow-md backdrop-blur-sm">
       <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">
         FRESH <br />
         FRUITS <br />
@@ -36,12 +41,10 @@
       <p class="text-lg max-w-md">Delivering quality fruits with exceptional taste and fresh.</p>
       <a href="#learn" class="inline-block px-6 py-3 bg-[#063c2d] text-white rounded-md font-semibold hover:opacity-90 transition">LEARN MORE</a>
     </div>
-    <div class="mt-10 md:mt-0 flex justify-center">
-      <img src="hero.jpg" alt="Hero Image" class="max-w-full rounded-xl shadow-xl" />
-    </div>
   </main>
 
-  <section id="about" class="bg-white py-20 px-10">
+  <!-- About Us Section -->
+  <section id="about" class="bg-white/80 backdrop-blur-sm py-20 px-10">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-extrabold mb-4">About Us</h2>
       <p class="text-lg leading-relaxed max-w-2xl mx-auto">
@@ -52,7 +55,8 @@
     </div>
   </section>
 
-  <section id="products" class="bg-[#fcebd3] py-20 px-10">
+  <!-- Products Section -->
+  <section id="products" class="bg-white/80 backdrop-blur-sm py-20 px-10">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-extrabold text-center mb-12">Our Products</h2>
       <div class="grid gap-10 md:grid-cols-3">
@@ -75,7 +79,8 @@
     </div>
   </section>
 
-  <section id="vendors" class="bg-white py-20 px-10">
+  <!-- For Vendors Section -->
+  <section id="vendors" class="bg-white/80 backdrop-blur-sm py-20 px-10">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-extrabold mb-6">For Vendors</h2>
       <p class="text-lg mb-8 max-w-2xl mx-auto">
@@ -89,7 +94,8 @@
     </div>
   </section>
 
-  <section id="contact" class="bg-[#fcebd3] py-20 px-10">
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white/80 backdrop-blur-sm py-20 px-10">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-extrabold mb-6">Contact Us</h2>
       <p class="text-lg mb-8 max-w-2xl mx-auto">
@@ -106,12 +112,13 @@
     </div>
   </section>
 
-  <footer class="bg-[#063c2d] text-white py-8 text-center">
+  <footer class="bg-[#063c2d]/90 text-white py-8 text-center">
     <p class="text-sm">&copy; 2025 NL FOOD. All rights reserved.</p>
     <div class="mt-4 space-x-4">
       <a href="#" class="hover:underline">Privacy Policy</a>
       <a href="#" class="hover:underline">Terms of Service</a>
     </div>
   </footer>
+
 </body>
 </html>
